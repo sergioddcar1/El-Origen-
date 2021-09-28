@@ -1,0 +1,78 @@
+*{
+    font-family: 'Nunito Sans', sans-serif;
+    
+}
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    display:flexbox;
+    justify-content: center;
+    align-items: center;
+    background-color: #b3c095;
+    margin: 0%;
+}
+.container{
+    width: 400px;
+    height: 600px;
+    border: 4px;
+    box-shadow: 0px 1px 17px 1px rgba(0,0,0,0.6);-webkit-box-shadow: 0px 1px 17px 1px rgba(0,0,0,0.79);-moz-box-shadow: 0px 1px 17px 1px rgba(0,0,0,0.79);
+    border-radius: 20px;
+    justify-content: center;
+    background-color: black;
+    margin-left: 500px;
+    margin-top: 10px;
+    }
+#main_logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 60%;
+}
+.box2{
+    text-align: center;
+    color: #94bc0e;
+}
+.box3{
+    color: #94bc0e;
+    display: flex;
+    justify-content: center;
+}
+input[type=email]{
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    margin: 10px;
+    width: 300px;
+    border-radius: 10px;
+    font-style: italic;
+}
+input[type=password]{
+    display: flex;
+    padding: 12px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 10px;
+    font-style: italic;
+}
+button{
+    border-radius: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: #94bc0e;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 70px;
+    margin-bottom: 40px;
+}
+h4{
+    font-size: 12px;
+}
+span{
+    color: #94bc0e;
+    margin-left: 60px;
+}
+
+
+a{
+    color: #94bc0e;
+}

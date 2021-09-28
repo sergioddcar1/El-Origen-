@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="../css/register_style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <a href="home.html">
+                <img src="../images/logo.png" alt="Logo EL ORIGEN" >
+            </a>
+        </div>
+        <div class="box2">
+            <h2> ¡Bienvenido! </h2>
+        </div>
+        <div class="box3">
+            <form method="POST" action="mi_servidor" autocomplete="on">
+
+                <input type="text" id="name" name="name"
+                placeholder="Nombres" required="true"><br>
+
+                <input type="text" id="lastname" name="lastname"
+                placeholder="Apellidos" required="true"><br>
+
+                <input type="tel" id="cell" name="cell" 
+                placeholder="WhatsApp" required="true"><br>
+
+                <input type="email" id="email" name="email" 
+                placeholder="Correo Electrónico"required="true"><br>
+
+                <input type="password" id="password" name="password" 
+                placeholder="Contraseña" required="true"><br>
+                
+                <button type="button">Regístrate</button>
+
+            </form>
+            
+        </div>
+        <span>¿Ya tienes una cuenta?</span>
+        <a href="login.html">Iniciar sesión</a>
+    </div>
+</body>
+</html>
