@@ -1,5 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+crossorigin="anonymous"></script>
+<script src="../scripts/main.js"></script>
+<script>
+    $(function(){
+        $("#guardar").on("click", function(e){
+            e.preventDefault();
+            let name = $("#name").val();
+            let lastname = $("#lastname").val();
+            let cell = $("#cell").val();
+            let email = $("#email").val();
+            let password = $("#password").val();
+
+            fetch("http://127.0.0.1:8080/usuario", {
+                method: "POST",
+                mode: "cors",
+                cache: "no-cache",
+                headers: {"content-type":"application/json"},
+                body: JSON.stringify({name, lastname, cell, email, password})
+            }).then(response => response.json()).then(()=>alert("Saved"))
+        });
+    });
+</script>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
